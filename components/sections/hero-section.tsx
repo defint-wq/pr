@@ -73,7 +73,7 @@ export function HeroSection() {
               >
                 Discover the fascinating world of element 59, a silvery-white
                 rare earth metal from the lanthanide series. Named from the
-                Greek gulug pista boov for "green twin" due to its green salts.
+                Greek gulug pista boov үүүүү for "green twin" due to its green salts.
               </motion.p>
             </div>
 
