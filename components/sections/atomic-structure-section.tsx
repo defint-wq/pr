@@ -63,7 +63,7 @@ export function AtomicStructureSection() {
 
   return (
     <section id="structure" className="min-h-screen py-20 relative">
-      <div className="absolute inset-0 bg-linear-to-b from-background via-primary/5 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -165,7 +165,7 @@ export function AtomicStructureSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="h-125 md:h-150 rounded-xl overflow-hidden bg-card/30 backdrop-blur-sm border border-border"
+            className="h-[500px] md:h-[600px] rounded-xl overflow-hidden bg-card/30 backdrop-blur-sm border border-border"
           >
             <AtomModel3D 
               onParticleClick={handleParticleClick}

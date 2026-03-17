@@ -7,25 +7,25 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Прaсeодимиум',
-  description: 'Прaсeодимиум — лантанидын цувралд багтдаг ховор газрын элемент. Энэхүү вэб хуудсаар дамжуулан та интерактив 3D атомын загваруудаар нь танилцаж, химийн шинж чанар, нэгдлүүд болон бодит амьдрал дахь хэрэглээг нь судлах боломжтой',
+  title: 'Praseodymium (Pr) | Interactive Element Explorer',
+  description: 'Explore Praseodymium - a rare earth element from the lanthanide series. Interactive 3D atomic models, chemical properties, compounds, and real-world applications.',
   generator: 'v0.app',
   icons: {
     icon: [
       {
-        url: '/gg.svg',
+        url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/gg.svg',
+        url: '/icon-dark-32x32.png',
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/gg.svg',
+        url: '/icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/gg.svg',
+    apple: '/apple-icon.png',
   },
 }
 

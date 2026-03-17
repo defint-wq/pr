@@ -121,7 +121,7 @@ export function CompoundsSection() {
 
   return (
     <section id="compounds" className="min-h-screen py-20 relative">
-      <div className="absolute inset-0 bg-linear-to-b from-background via-primary/5 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -171,7 +171,7 @@ export function CompoundsSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="h-100 md:h-125 rounded-xl overflow-hidden bg-card/30 backdrop-blur-sm border border-border relative"
+            className="h-[400px] md:h-[500px] rounded-xl overflow-hidden bg-card/30 backdrop-blur-sm border border-border relative"
           >
             <MoleculeViewer compound={activeCompound.structure} />
             
@@ -247,7 +247,7 @@ export function CompoundsSection() {
                   <ul className="space-y-2">
                     {activeCompound.properties.map((prop, i) => (
                       <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                         {prop}
                       </li>
                     ))}
@@ -264,7 +264,7 @@ export function CompoundsSection() {
                   <ul className="space-y-2">
                     {activeCompound.uses.map((use, i) => (
                       <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                         {use}
                       </li>
                     ))}
@@ -299,7 +299,7 @@ export function CompoundsSection() {
         >
           <h3 className="text-xl font-semibold mb-6 text-center text-foreground">Compound Comparison</h3>
           <div className="overflow-x-auto">
-            <table className="w-full min-w-150">
+            <table className="w-full min-w-[600px]">
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left py-3 px-4 text-muted-foreground font-medium">Property</th>

@@ -96,7 +96,7 @@ export function ApplicationsSection() {
 
   return (
     <section id="applications" className="min-h-screen py-20 relative">
-      <div className="absolute inset-0 bg-linear-to-b from-background via-accent/5 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/5 to-background" />
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -162,7 +162,7 @@ export function ApplicationsSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="lg:col-span-1 h-100 md:h-125 rounded-xl overflow-hidden bg-card/30 backdrop-blur-sm border border-border"
+            className="lg:col-span-1 h-[400px] md:h-[500px] rounded-xl overflow-hidden bg-card/30 backdrop-blur-sm border border-border"
           >
             <ApplicationScene type={activeApp.sceneType} />
           </motion.div>
@@ -201,7 +201,7 @@ export function ApplicationsSection() {
                       transition={{ delay: i * 0.1 }}
                       className="flex items-start gap-3 text-sm text-muted-foreground"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0" />
                       {detail}
                     </motion.li>
                   ))}
