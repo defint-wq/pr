@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Praseodymium (Pr) | Interactive Element Explorer',
-  description: 'Explore Praseodymium - a rare earth element from the lanthanide series. Interactive 3D atomic models, chemical properties, compounds, and real-world applications.',
+  title: 'Прaсeодимиум',
+  description: 'Лантанидын цувралд багтдаг ховор газрын элемент Прaсeодимийг судлаарай. Интерактив 3D атомын загварууд, химийн шинж чанар, нэгдлүүд болон бодит амьдрал дахь хэрэглээг мэдэж аваарай.',
   generator: 'v0.app',
   icons: {
     icon: [
