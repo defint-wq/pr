@@ -30,7 +30,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-screen relative flex items-center justify-center overflow-hidden"
+      className="min-h-screen pt-24 sm:pt-32 relative flex items-center justify-center overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
@@ -73,7 +73,8 @@ export function HeroSection() {
               >
                 Discover the fascinating world of element 59, a silvery-white
                 rare earth metal from the lanthanide series. Named from the
-                Greek gulug pista boov үүүүү for "green twin" due to its green salts.
+                Greek gulug pista boov үүүүү for "green twin" due to its green
+                salts.
               </motion.p>
             </div>
 

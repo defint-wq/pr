@@ -7,8 +7,8 @@ import { Atom, FlaskConical, Layers, Lightbulb, BookOpen } from "lucide-react"
 const navItems = [
   { id: "hero", label: "Pr", icon: Atom },
   { id: "structure", label: "Бүтэц", icon: Atom },
-  { id: "properties", label: "Шинж чанарууд", icon: FlaskConical },
-  { id: "compounds", label: "Нэгдлүүд", icon: Layers },
+  { id: "properties", label: "Шинж чанар", icon: FlaskConical },
+  { id: "compounds", label: "Нэгдэл", icon: Layers },
   { id: "applications", label: "Хэрэглээ", icon: Lightbulb },
   { id: "conclusion", label: "Дүгнэлт", icon: BookOpen },
 ]
