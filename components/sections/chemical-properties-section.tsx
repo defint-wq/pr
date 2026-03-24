@@ -23,14 +23,14 @@ const OrbitalVisualization = dynamic(
 const properties = [
   {
     icon: Zap,
-    title: "Үйлдлийн төлөв (Oxidation States)",
+    title: "Исэлдэлтийн төлөв (Oxidation States)",
     value: "+3, +4",
     description:
       "+3 төлөв нь хамгийн тогтвортой, зарим нэгдлүүдэд +4 үүсгэж болно. +3 төлөв нь ховор шороон металл (lanthanide) элементүүдийн онцлог шинж юм.",
   },
   {
     icon: Droplets,
-    title: "Идэвхитэй байдал (Reactivity)",
+    title: "Идэвхжилт (Reactivity)",
     value: "Дунд зэрэг",
     description:
       "Өрөөний температурт хүчилтөрөгчтэй удаан урвалд орно, халуунд хурдан урвалд ордог. Pr₂O₃ исэл үүсгэдэг.",
@@ -204,7 +204,7 @@ export function ChemicalPropertiesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-accent">Химийн</span> Шинж чанарууд
+            <span className="text-accent">Шинж</span> Чанарууд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
             Празеодимиумын химийн шинж чанар, электроны зохион байгуулалт,
@@ -301,7 +301,7 @@ export function ChemicalPropertiesSection() {
             {/* Position in Periodic Table */}
             <div className="p-4 md:p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4 text-foreground">
-                Position in Periodic Table
+                Үелэх хүснэгт дэх байрлал
               </h3>
 
               <div className="overflow-x-auto">
@@ -379,7 +379,7 @@ export function ChemicalPropertiesSection() {
                 <div>
                   <div className="text-muted-foreground">Төрөл</div>
                   <div className="text-lg md:text-xl font-bold text-foreground">
-                    Ховор шороон металл
+                    Газрын ховор
                   </div>
                 </div>
               </div>
