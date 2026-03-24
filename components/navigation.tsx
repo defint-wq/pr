@@ -63,7 +63,7 @@ export function Navigation() {
             <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
               <span className="text-primary font-bold text-lg">Pr</span>
             </div>
-            <span className="font-semibold text-foreground hidden sm:block">Praseodymium</span>
+            <span className="font-semibold text-foreground hidden sm:block">Празеодимиум</span>
           </motion.div>
 
           <div className="flex items-center gap-1 md:gap-2">

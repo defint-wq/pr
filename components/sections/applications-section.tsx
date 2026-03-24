@@ -1,103 +1,115 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Magnet, Palette, Plane, Zap, Focus, Sparkles } from "lucide-react"
-import dynamic from "next/dynamic"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Magnet, Palette, Plane, Zap, Focus, Sparkles } from "lucide-react";
+import dynamic from "next/dynamic";
 
 const ApplicationScene = dynamic(
-  () => import("@/components/3d/application-scene").then(mod => ({ default: mod.ApplicationScene })),
+  () =>
+    import("@/components/3d/application-scene").then((mod) => ({
+      default: mod.ApplicationScene,
+    })),
   {
     ssr: false,
-    loading: () => <div className="w-full h-full flex items-center justify-center"><div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" /></div>
-  }
-)
+    loading: () => (
+      <div className="w-full h-full flex items-center justify-center">
+        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+      </div>
+    ),
+  },
+);
 
 interface Application {
-  id: string
-  icon: typeof Magnet
-  title: string
-  description: string
-  details: string[]
-  sceneType: "magnet" | "glass" | "aircraft" | "motor" | "laser"
+  id: string;
+  icon: typeof Magnet;
+  title: string;
+  description: string;
+  details: string[];
+  sceneType: "magnet" | "glass" | "aircraft" | "motor" | "laser";
 }
 
 const applications: Application[] = [
   {
     id: "magnets",
     icon: Magnet,
-    title: "Permanent Magnets",
-    description: "Praseodymium is combined with neodymium to create powerful Pr-Nd magnets used in various high-tech applications.",
+    title: "Мөнхийн Соронз",
+    description:
+      "Празеодимиумийг неодимтэй хослуулан хүчирхэг Pr–Nd соронз үүсгэдэг бөгөөд үүнийг төрөл бүрийн өндөр технологийн хэрэглээнд ашигладаг.",
     details: [
-      "Up to 5% Pr in NdFeB magnets",
-      "Improves corrosion resistance",
-      "Enhances high-temperature performance",
-      "Used in hard disk drives, speakers, and headphones"
+      "NdFeB соронзод 5%-ийн хүртэл Pr агуулагддаг",
+      "Зэврэлтэд тэсвэртэй байдлыг сайжруулдаг",
+      "Өндөр температурт ажиллах чадварыг дээшлүүлдэг",
+      "Хатуу диск, спикер болон чихэвч зэрэгт ашиглагддаг",
     ],
-    sceneType: "magnet"
+    sceneType: "magnet",
   },
   {
     id: "glass",
     icon: Palette,
-    title: "Glass Coloring",
-    description: "Praseodymium compounds create distinctive yellow-green colors in glasses and ceramics, used in protective eyewear.",
+    title: "Шилний Өнгөлгөө",
+    description:
+      "Празеодимиумийн нэгдлүүд шил ба керамикт шар-ногоон өнгө үүсгэдэг бөгөөд хамгаалалтын нүдний шилэнд ашиглагддаг. ",
     details: [
-      "Creates didymium glass",
-      "Filters yellow sodium flare in glassblowing",
-      "Used in welder and glassblower goggles",
-      "Produces unique ceramic glazes"
+      "Дидимиум шил үүсгэдэг",
+      "Шил хайлах үед гардаг натрийн шар гэрлийг шүүж, нүдийг хамгаалдаг",
+      "Гагнуурын хамгаалалтын нүдний шилэнд ашиглагддаг",
+      "Онцгой керамик глазур үүсгэдэг",
     ],
-    sceneType: "glass"
+    sceneType: "glass",
   },
   {
     id: "aerospace",
     icon: Plane,
-    title: "Aerospace Alloys",
-    description: "Praseodymium enhances the strength and heat resistance of magnesium alloys used in aircraft engines.",
+    title: "Агаарын Тээврийн Хайлш",
+    description:
+      "Празеодимиум нь нисэх онгоцны хөдөлгүүрт ашиглагддаг магнийн хайлшийн бат бөх байдал, өндөр температурт тэсвэрлэх чадварыг сайжруулдаг.",
     details: [
-      "Improves high-temperature strength",
-      "Reduces creep in Mg alloys",
-      "Used in jet engine components",
-      "Lighter weight than traditional alloys"
+      "Өндөр температурт бат бөх байдлыг сайжруулдаг",
+      "Mg хайлшийн урт хугацааны хэлбэр хувиралтыг багасгадаг",
+      "Тийрэлтэт хөдөлгүүрийн эд ангиудад ашиглагддаг",
+      "Уламжлалт хайлшуудтай харьцуулахад хөнгөн жинтэй",
     ],
-    sceneType: "aircraft"
+    sceneType: "aircraft",
   },
   {
     id: "motors",
     icon: Zap,
-    title: "Electric Motors",
-    description: "The magnetic properties of Pr-containing alloys make them essential for high-efficiency electric motors.",
+    title: "Цахилгаан хөдөлгүүрүүд",
+    description:
+      "Празеодимиум агуулсан хайлшуудын соронзон шинж чанар нь өндөр үр ашигтай цахилгаан хөдөлгүүрт зайлшгүй шаардлагатай болгодог.",
     details: [
-      "Electric vehicle motors",
-      "Wind turbine generators",
-      "Industrial servo motors",
-      "High power density applications"
+      "Цахилгаан тээврийн хэрэгслийн хөдөлгүүрүүд",
+      "Салхин турбин генераторууд",
+      "Үйлдвэрийн серво хөдөлгүүрүүд",
+      "Өндөр хүчний нягтралтай хэрэглээ",
     ],
-    sceneType: "motor"
+    sceneType: "motor",
   },
   {
     id: "lasers",
     icon: Focus,
-    title: "Lasers & Optics",
-    description: "Praseodymium-doped materials are used in solid-state lasers and fiber optic amplifiers.",
+    title: "Лазер ба Оптик",
+    description:
+      "Празеодимиумаар дэвсгэрлэсэн материалуудыг хатуу төлөвт лазер болон шилэн оптик өсгөгчид ашигладаг.",
     details: [
-      "Pr:YLF laser crystals",
-      "Fiber optic signal amplification",
-      "Infrared optical materials",
-      "Research and medical lasers"
+      "Pr:YLF лазерын кристалууд",
+      "Шилэн оптик дохиог өсгөх",
+      "Инфра улаан оптик материалууд",
+      "Судалгаа болон эмнэлгийн лазерууд",
     ],
-    sceneType: "laser"
-  }
-]
+    sceneType: "laser",
+  },
+];
 
 export function ApplicationsSection() {
-  const [activeApp, setActiveApp] = useState(applications[0])
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
+  const [activeApp, setActiveApp] = useState(applications[0]);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <section id="applications" className="min-h-screen py-20 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-accent/5 to-background" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -107,11 +119,11 @@ export function ApplicationsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-accent">Real-World</span> Applications
+            <span className="text-accent">Бодит</span> Хэрэглээ
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            From powerful magnets to aerospace alloys, Praseodymium plays a crucial role 
-            in modern technology and industry.
+            Хүчирхэг соронзноос агаарын тээврийн хайлш хүртэл, Празеодимиум нь
+            орчин үеийн технологи ба үйлдвэрлэлд чухал үүрэг гүйцэтгэдэг юм шүү.
           </p>
         </motion.div>
 
@@ -135,17 +147,27 @@ export function ApplicationsSection() {
                 }`}
               >
                 <div className="flex items-center gap-4">
-                  <div className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
-                    activeApp.id === app.id ? "bg-primary/30" : "bg-secondary"
-                  }`}>
-                    <app.icon className={`w-6 h-6 ${
-                      activeApp.id === app.id ? "text-primary" : "text-muted-foreground"
-                    }`} />
+                  <div
+                    className={`w-12 h-12 rounded-lg flex items-center justify-center transition-colors ${
+                      activeApp.id === app.id ? "bg-primary/30" : "bg-secondary"
+                    }`}
+                  >
+                    <app.icon
+                      className={`w-6 h-6 ${
+                        activeApp.id === app.id
+                          ? "text-primary"
+                          : "text-muted-foreground"
+                      }`}
+                    />
                   </div>
                   <div>
-                    <h3 className={`font-semibold ${
-                      activeApp.id === app.id ? "text-primary" : "text-foreground"
-                    }`}>
+                    <h3
+                      className={`font-semibold ${
+                        activeApp.id === app.id
+                          ? "text-primary"
+                          : "text-foreground"
+                      }`}
+                    >
                       {app.title}
                     </h3>
                     <p className="text-sm text-muted-foreground line-clamp-1">
@@ -180,9 +202,11 @@ export function ApplicationsSection() {
                 <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
                   <activeApp.icon className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-foreground">{activeApp.title}</h3>
+                <h3 className="text-2xl font-bold text-foreground">
+                  {activeApp.title}
+                </h3>
               </div>
-              
+
               <p className="text-muted-foreground mb-6">
                 {activeApp.description}
               </p>
@@ -190,7 +214,7 @@ export function ApplicationsSection() {
               <div className="space-y-3">
                 <h4 className="font-semibold text-foreground flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-accent" />
-                  Key Applications
+                  Гол хэрэглээ
                 </h4>
                 <ul className="space-y-2">
                   {activeApp.details.map((detail, i) => (
@@ -213,23 +237,28 @@ export function ApplicationsSection() {
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border text-center">
                 <div className="text-3xl font-bold text-primary">$500M+</div>
-                <div className="text-sm text-muted-foreground">Annual Market</div>
+                <div className="text-sm text-muted-foreground">
+                  Празеодимиумийн жилийн зах зээл{" "}
+                </div>
               </div>
               <div className="p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border text-center">
                 <div className="text-3xl font-bold text-accent">15%</div>
-                <div className="text-sm text-muted-foreground">Yearly Growth</div>
+                <div className="text-sm text-muted-foreground">
+                  Жилийн өсөлт
+                </div>
               </div>
             </div>
 
             <div className="p-4 rounded-xl bg-primary/10 border border-primary/30">
               <div className="text-sm text-primary">
-                Praseodymium demand is expected to increase significantly due to 
-                electric vehicle adoption and renewable energy expansion.
+                Цахилгаан тээврийн хэрэгслийн хэрэглээ нэмэгдэх болон сэргээгдэх
+                эрчим хүчний өргөжилттэй холбоотойгоор Празеодимиумийн эрэлт ихээхэн
+                нэмэгдэх төлөвтэй байна.
               </div>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }

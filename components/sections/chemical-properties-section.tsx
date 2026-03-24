@@ -23,34 +23,33 @@ const OrbitalVisualization = dynamic(
 const properties = [
   {
     icon: Zap,
-    title: "Oxidation States",
+    title: "Үйлдлийн төлөв (Oxidation States)",
     value: "+3, +4",
     description:
-      "Most stable as +3, can form +4 in some compounds. The +3 state is characteristic of lanthanides.",
+      "+3 төлөв нь хамгийн тогтвортой, зарим нэгдлүүдэд +4 үүсгэж болно. +3 төлөв нь ховор шороон металл (lanthanide) элементүүдийн онцлог шинж юм.",
   },
   {
     icon: Droplets,
-    title: "Reactivity",
-    value: "Moderate",
+    title: "Идэвхитэй байдал (Reactivity)",
+    value: "Дунд зэрэг",
     description:
-      "Reacts slowly with oxygen at room temperature, rapidly when heated. Forms Pr₂O₃ oxide layer.",
+      "Өрөөний температурт хүчилтөрөгчтэй удаан урвалд орно, халуунд хурдан урвалд ордог. Pr₂O₃ исэл үүсгэдэг.",
   },
   {
     icon: Magnet,
-    title: "Magnetic Properties",
-    value: "Paramagnetic",
+    title: "Соронзон шинж чанар (Magnetic Properties)",
+    value: "Парамагнетик",
     description:
-      "Exhibits paramagnetic behavior due to unpaired 4f electrons. Used in permanent magnets.",
+      "Тэгш бус 4f электроноос үүдэлтэй парамагнетик шинж үзүүлдэг. Соронзонд ашиглагддаг.",
   },
   {
     icon: Thermometer,
-    title: "Melting Point",
+    title: "Хайлах температур",
     value: "931°C",
     description:
-      "Relatively low melting point for a rare earth metal. Boiling point is 3,520°C.",
+      "Ховор шороон металл дундаас харьцангуй бага хайлах температуртай. Буцлах цэг нь 3,520°C.",
   },
 ];
-
 const electronConfig = [
   { orbital: "1s", electrons: 2, filled: true },
   { orbital: "2s", electrons: 2, filled: true },
@@ -205,11 +204,11 @@ export function ChemicalPropertiesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-accent">Chemical</span> Properties
+            <span className="text-accent">Химийн</span> Шинж чанарууд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            Understanding the chemical behavior of Praseodymium through its
-            electron configuration, oxidation states, and unique properties.
+            Празеодимиумын химийн шинж чанар, электроны зохион байгуулалт,
+            үйлдлийн төлөв болон онцгой шинж чанаруудыг судалж ойлгох уу ?
           </p>
         </motion.div>
         {/* Properties Grid */}
@@ -249,11 +248,11 @@ export function ChemicalPropertiesSection() {
           >
             <div className="p-4 md:p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4 text-foreground">
-                Orbital Visualization
+                Орбиталын дүрслэл
               </h3>
               <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-4">
-                Click on an orbital to visualize its shape. The 4f orbitals are
-                key to Praseodymium&apos;s unique properties.
+                Орбитал дээр дарж хөдөлгөж томруулж харж болно. 4f орбиталууд нь
+                Празеодимиумын онцгой шинж чанарт чухал үүрэгтэй.
               </p>
               <div className="w-full aspect-square md:h-[250px] rounded-lg overflow-hidden bg-background/50">
                 <OrbitalVisualization orbital={activeOrbital} />
@@ -263,7 +262,7 @@ export function ChemicalPropertiesSection() {
             {/* Electron Configuration */}
             <div className="p-4 md:p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4 text-foreground">
-                Electronic Configuration
+                Электрон зохион байгуулалт
               </h3>
               <div className="flex flex-wrap gap-2">
                 {electronConfig.map((config) => (
@@ -286,8 +285,8 @@ export function ChemicalPropertiesSection() {
                 ))}
               </div>
               <div className="mt-2 md:mt-4 text-xs md:text-sm text-muted-foreground">
-                <span className="text-primary">Highlighted:</span> Valence
-                electrons (4f³ 6s²)
+                <span className="text-primary">Онцлон тэмдэглэсэн:</span>{" "}
+                Валентын электронууд (4f³ 6s²)
               </div>
             </div>
           </motion.div>
@@ -360,27 +359,27 @@ export function ChemicalPropertiesSection() {
 
               <div className="mt-4 md:mt-6 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 text-xs md:text-sm">
                 <div>
-                  <div className="text-muted-foreground">Period</div>
+                  <div className="text-muted-foreground">Үе</div>
                   <div className="text-lg md:text-xl font-bold text-foreground">
                     6
                   </div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground">Group</div>
+                  <div className="text-muted-foreground">Бүлэг</div>
                   <div className="text-lg md:text-xl font-bold text-primary">
-                    Lanthanide
+                    Лантанид
                   </div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground">Block</div>
+                  <div className="text-muted-foreground">Блок</div>
                   <div className="text-lg md:text-xl font-bold text-foreground">
-                    f-block
+                    f-блок
                   </div>
                 </div>
                 <div>
-                  <div className="text-muted-foreground">Category</div>
+                  <div className="text-muted-foreground">Төрөл</div>
                   <div className="text-lg md:text-xl font-bold text-foreground">
-                    Rare Earth
+                    Ховор шороон металл
                   </div>
                 </div>
               </div>
@@ -389,28 +388,28 @@ export function ChemicalPropertiesSection() {
             {/* Physical Properties */}
             <div className="p-4 md:p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border">
               <h3 className="text-lg md:text-xl font-semibold mb-2 md:mb-4 text-foreground">
-                Physical Properties
+                Физик шинж чанарууд{" "}
               </h3>
               <div className="space-y-2 md:space-y-4 text-xs md:text-sm">
                 <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Density</span>
-                  <span className="font-mono text-foreground">6.77 g/cm³</span>
+                  <span className="text-muted-foreground">Нягт</span>
+                  <span className="font-mono text-foreground">6.77 гр/cм³</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">
-                    Crystal Structure
-                  </span>
-                  <span className="font-mono text-foreground">DHCP</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Appearance</span>
+                  <span className="text-muted-foreground">Кристал бүтэц</span>
                   <span className="font-mono text-foreground">
-                    Silvery-white
+                    Гексагональ, Кубик
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">State at 20°C</span>
-                  <span className="font-mono text-foreground">Solid</span>
+                  <span className="text-muted-foreground">Харагдац</span>
+                  <span className="font-mono text-foreground">
+                    Цагаан саарал гялгар 
+                  </span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-muted-foreground">20°C-д төлөв</span>
+                  <span className="font-mono text-foreground">Хатуу</span>
                 </div>
               </div>
             </div>

@@ -30,37 +30,40 @@ const FinalAtom3D = dynamic(
 const highlights = [
   {
     icon: Atom,
-    title: "Essential Element",
-    description: "One of 17 rare earth elements critical to modern technology",
+    title: "Чухал элемент",
+    description:
+      "Орчин үеийн технологид зайлшгүй шаардлагатай 17 ховор газрын элементүүдийн нэг",
   },
   {
     icon: Zap,
-    title: "Growing Demand",
-    description: "Increasing importance in clean energy and electric vehicles",
+    title: "Эрэлт өсөх хандлага",
+    description:
+      "Цэвэр эрчим хүч ба цахилгаан тээврийн хэрэгсэлд нэмэгдэж буй ач холбогдол",
   },
   {
     icon: Globe,
-    title: "Global Impact",
-    description: "Used in technologies that shape our daily lives",
+    title: "Дэлхийн түвшний нөлөө",
+    description:
+      "Бидний өдөр тутмын амьдралыг тодорхойлдог технологид ашиглагддаг",
   },
 ];
 
 const futureTopics = [
-  "Development of more efficient Pr-based permanent magnets",
-  "Advanced optical materials for quantum computing",
-  "Sustainable extraction and recycling methods",
-  "New alloys for next-generation aerospace",
-  "Enhanced energy storage applications",
+  "Pr-д суурилсан илүү үр ашигтай мөнхийн соронз хөгжүүлэлт",
+  "Квантын тооцоололд зориулсан дэвшилтэт оптик материалууд",
+  "Тогтвортой олборлолт ба дахин боловсруулах аргачлалууд",
+  "Дараагийн үеийн агаарын тээврийн хайлш",
+  "Эрчим хүч хадгалах хэрэглээг сайжруулах",
 ];
 
 const periodicTableRow = [
-  { symbol: "La", name: "Lanthanum", number: 57 },
-  { symbol: "Ce", name: "Cerium", number: 58 },
-  { symbol: "Pr", name: "Praseodymium", number: 59, highlighted: true },
-  { symbol: "Nd", name: "Neodymium", number: 60 },
-  { symbol: "Pm", name: "Promethium", number: 61 },
-  { symbol: "Sm", name: "Samarium", number: 62 },
-  { symbol: "Eu", name: "Europium", number: 63 },
+  { symbol: "La", name: "Лантан", number: 57 },
+  { symbol: "Ce", name: "Церий", number: 58 },
+  { symbol: "Pr", name: "Празеодимиум", number: 59, highlighted: true },
+  { symbol: "Nd", name: "Неодим", number: 60 },
+  { symbol: "Pm", name: "Прометий", number: 61 },
+  { symbol: "Sm", name: "Самарий", number: 62 },
+  { symbol: "Eu", name: "Европиум", number: 63 },
 ];
 
 export function ConclusionSection() {
@@ -86,11 +89,11 @@ export function ConclusionSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-primary">Summary</span> & Future
+            <span className="text-primary">Дүгнэлт</span> ба Ирээдүйд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            Praseodymium stands as a cornerstone of modern technology, with its
-            importance only set to grow in the coming decades.
+            Празеодим нь орчин үеийн технологийн суурь элемент бөгөөд ирэх хэдэн
+            арван жилд түүний ач холбогдол улам нэмэгдэх төлөвтэй байна
           </p>
         </motion.div>
 
@@ -146,12 +149,15 @@ export function ConclusionSection() {
             >
               <div className="flex items-center gap-2 mb-3">
                 <Sparkles className="w-5 h-5 text-primary" />
-                <span className="font-semibold text-primary">Key Takeaway</span>
+                <span className="font-semibold text-primary">
+                  Ерөнхий Дүгнэлт
+                </span>
               </div>
               <p className="text-foreground">
-                From its green-tinted salts to its role in powering electric
-                vehicles, Praseodymium exemplifies how rare earth elements are
-                fundamental to sustainable technology and innovation.
+                Ногоон өнгөтэй давсны нэгдлүүдээс эхлээд цахилгаан тээврийн
+                хэрэгслийг хөдөлгөгч хүчээр хангах үүрэг хүртэл, Празеодим нь
+                ховор газрын элементүүд хэрхэн тогтвортой технологи ба шинэ
+                бүтээлд суурь болохыг тодорхой харуулдаг байна.
               </p>
             </motion.div>
           </motion.div>
@@ -165,7 +171,7 @@ export function ConclusionSection() {
           className="mb-16"
         >
           <h3 className="text-xl font-semibold text-center mb-6 text-foreground">
-            Praseodymium in the Lanthanide Series
+            Празеодим Лантанидын цувралд
           </h3>
           <div className="flex justify-center gap-2 overflow-x-auto py-4">
             {periodicTableRow.map((element, index) => (
@@ -198,7 +204,7 @@ export function ConclusionSection() {
               >
                 <div
                   className={`text-xs ${element.highlighted ? "text-primary-foreground/70" : "text-muted-foreground"}`}
-                > 
+                >
                   {element.number}
                 </div>
                 <div
@@ -224,7 +230,7 @@ export function ConclusionSection() {
           className="p-8 rounded-xl bg-card/50 backdrop-blur-sm border border-border mb-16"
         >
           <h3 className="text-2xl font-bold text-center mb-6 text-foreground">
-            Future Research Directions
+            Ирээдүйн судалгааны чиглэлүүд
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {futureTopics.map((topic, index) => (
@@ -259,44 +265,47 @@ export function ConclusionSection() {
             className="gap-2"
           >
             <ArrowUp className="w-4 h-4" />
-            Back to Top
+            Дээш буцах
           </Button>
 
           <div className="pt-8 border-t border-border">
-            <p className="text-muted-foreground text-sm mb-4">
-              Learn more about rare earth elements
+            <p className="text-muted-foreground mb-4">
+              Бидний танилцуулгыг сонирхсонд баярлалаа.
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <a
                 href="https://www.webelements.com/praseodymium/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline flex items-center gap-1"
+                className="text-primary hover:underline flex items-center gap-1"
               >
-                WebElements <ExternalLink className="w-3 h-3" />
+                Э. Баттамир <ExternalLink className="w-3 h-3" />
               </a>
               <a
                 href="https://pubchem.ncbi.nlm.nih.gov/element/Praseodymium"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline flex items-center gap-1"
+                className="text-primary hover:underline flex items-center gap-1"
               >
-                PubChem <ExternalLink className="w-3 h-3" />
-              </a>
-              <a
-                href="https://www.rsc.org/periodic-table/element/59/praseodymium"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline flex items-center gap-1"
-              >
-                RSC <ExternalLink className="w-3 h-3" />
+                З. Маргад <ExternalLink className="w-3 h-3" />
               </a>
             </div>
           </div>
 
-          <p className="text-xs text-muted-foreground">
-            Interactive Educational Website about Praseodymium (Pr)
-          </p>
+          <div className="text-muted-foreground grid grid-cols-4">
+            <div>
+              Монгол Улсын Их Сургууль
+            </div>
+            <div>
+              Шинжлэх Ухааны Сургууль
+            </div>
+            <div>
+              Байгалийн Ухааны Салбар
+            </div>
+            <div>
+              Химийн тэнхим
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

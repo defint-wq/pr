@@ -20,10 +20,10 @@ const ElementTile3D = dynamic(
 );
 
 const facts = [
-  { label: "Atomic Number", value: "59" },
-  { label: "Atomic Mass", value: "140.91 u" },
-  { label: "Period", value: "6" },
-  { label: "Group", value: "Lanthanide" },
+  { label: "Атомын дугаар", value: "59" },
+  { label: "Атом масс", value: "140.91 u" },
+  { label: "Үе", value: "6" },
+  { label: "Бүлэг", value: "Лантаноид" },
 ];
 
 export function HeroSection() {
@@ -53,7 +53,7 @@ export function HeroSection() {
                 transition={{ delay: 0.2 }}
               >
                 <Sparkles className="w-4 h-4" />
-                Rare Earth Element
+                Газрын ховор элемент
               </motion.div>
 
               <motion.h1
@@ -62,7 +62,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <span className="text-primary">Praseodymium</span>
+                <span className="text-primary">Празеодимиум</span>
               </motion.h1>
 
               <motion.p
@@ -71,10 +71,10 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
               >
-                Discover the fascinating world of element 59, a silvery-white
-                rare earth metal from the lanthanide series. Named from the
-                Greek gulug pista boov үүүүү for "green twin" due to its green
-                salts.
+                Лантаноидын цувралд багтах, мөнгөлөг цагаан өнгийн ховор шороон
+                металл болох 59-р элементийн сонирхол татам шинж чанарыг танин
+                мэдээрэй. Түүний ногоон өнгийн давснаас улбаалж уг элементэд
+                Грекийн ‘ногоон ихэр’ гэсэн утгатай нэрийг өгсөн байдаг.
               </motion.p>
             </div>
 
@@ -112,12 +112,13 @@ export function HeroSection() {
               transition={{ delay: 0.9 }}
             >
               <h3 className="text-lg font-semibold mb-2 text-foreground">
-                Discovery
+                Элементийн нээлт
               </h3>
-              <p className="text-muted-foreground">
-                Discovered in 1885 by Carl Auer von Welsbach in Vienna, Austria.
-                He separated praseodymium and neodymium from a material known as
-                didymium, using fractional crystallization.
+              <p className="text-muted-foreground text-justify">
+                1885 онд Австрийн Вена хотод химич Карл Ауэр фон Вельсбах празеодимиум элементийг
+                нээсэн. Тэрээр фракцийн талсжуулалтын аргыг ашиглан ‘дидими’
+                хэмээх материалаас празеодим болон неодим элементүүдийг ялган
+                гаргаж авсан байна.
               </p>
             </motion.div>
           </motion.div>
