@@ -274,7 +274,7 @@ export function ConclusionSection() {
             </p>
             <div className="flex justify-center gap-4 flex-wrap">
               <a
-                href="https://www.webelements.com/praseodymium/"
+                href="mailto:24B1NUM0616@stud.num.edu.mn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline flex items-center gap-1"
@@ -282,7 +282,7 @@ export function ConclusionSection() {
                 Э. Баттамир <ExternalLink className="w-3 h-3" />
               </a>
               <a
-                href="https://pubchem.ncbi.nlm.nih.gov/element/Praseodymium"
+                href="mailto:25B1NUM1845@stud.num.edu.mn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline flex items-center gap-1"
