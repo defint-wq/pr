@@ -35,7 +35,7 @@ const particleDetails: Record<string, ParticleInfo> = {
     name: "Протон",
     description: "Эерэг цэнэгтэй субатом бөөм",
     charge: "+1",
-    role: "Атомын дугаарыг тодорхойлно (Празеодимиумд 59)",
+    role: "Атомын дугаарыг тодорхойлно (Празеодимд 59)",
   },
   neutron: {
     type: "neutron",

@@ -59,7 +59,7 @@ const futureTopics = [
 const periodicTableRow = [
   { symbol: "La", name: "Лантан", number: 57 },
   { symbol: "Ce", name: "Церий", number: 58 },
-  { symbol: "Pr", name: "Празеодимиум", number: 59, highlighted: true },
+  { symbol: "Pr", name: "Празеодим", number: 59, highlighted: true },
   { symbol: "Nd", name: "Неодим", number: 60 },
   { symbol: "Pm", name: "Прометий", number: 61 },
   { symbol: "Sm", name: "Самарий", number: 62 },

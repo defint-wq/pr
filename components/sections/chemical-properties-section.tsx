@@ -23,14 +23,14 @@ const OrbitalVisualization = dynamic(
 const properties = [
   {
     icon: Zap,
-    title: "Исэлдэлтийн төлөв (Oxidation States)",
+    title: "Исэлдэлтийн зэрэг (Oxidation States)",
     value: "+3, +4",
     description:
       "+3 төлөв нь хамгийн тогтвортой, зарим нэгдлүүдэд +4 үүсгэж болно. +3 төлөв нь ховор шороон металл (lanthanide) элементүүдийн онцлог шинж юм.",
   },
   {
     icon: Droplets,
-    title: "Идэвхжилт (Reactivity)",
+    title: "Идэвх (Reactivity)",
     value: "Дунд зэрэг",
     description:
       "Өрөөний температурт хүчилтөрөгчтэй удаан урвалд орно, халуунд хурдан урвалд ордог. Pr₂O₃ исэл үүсгэдэг.",
@@ -207,7 +207,7 @@ export function ChemicalPropertiesSection() {
             <span className="text-accent">Шинж</span> Чанарууд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            Празеодимиумын химийн шинж чанар, электроны зохион байгуулалт,
+            Празеодимын химийн шинж чанар, электроны зохион байгуулалт,
             үйлдлийн төлөв болон онцгой шинж чанаруудыг судалж ойлгох уу ?
           </p>
         </motion.div>
@@ -252,7 +252,7 @@ export function ChemicalPropertiesSection() {
               </h3>
               <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-4">
                 Орбитал дээр дарж хөдөлгөж томруулж харж болно. 4f орбиталууд нь
-                Празеодимиумын онцгой шинж чанарт чухал үүрэгтэй.
+                Празеодимын онцгой шинж чанарт чухал үүрэгтэй.
               </p>
               <div className="w-full aspect-square md:h-[250px] rounded-lg overflow-hidden bg-background/50">
                 <OrbitalVisualization orbital={activeOrbital} />

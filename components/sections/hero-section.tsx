@@ -62,7 +62,7 @@ export function HeroSection() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <span className="text-primary">Празеодимиум</span>
+                <span className="text-primary">Празеодим</span>
               </motion.h1>
 
               <motion.p
@@ -115,7 +115,7 @@ export function HeroSection() {
                 Элементийн нээлт
               </h3>
               <p className="text-muted-foreground text-justify">
-                1885 онд Австрийн Вена хотод химич Карл Ауэр фон Вельсбах празеодимиум элементийг
+                1885 онд Австрийн Вена хотод химич Карл Ауэр фон Вельсбах празеодим элементийг
                 нээсэн. Тэрээр фракцийн талсжуулалтын аргыг ашиглан ‘дидими’
                 хэмээх материалаас празеодим болон неодим элементүүдийг ялган
                 гаргаж авсан байна.
