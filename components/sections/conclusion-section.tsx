@@ -277,7 +277,7 @@ export function ConclusionSection() {
               rel="noopener noreferrer"
               className="text-primary hover:underline gap-1 flex items-center flex-row"
             >
-              Wikipedia Празодиум
+              Wikipedia Празеодим
               <ExternalLink className="w-3 h-3" />
             </a>
             <a
