@@ -268,7 +268,7 @@ export function ConclusionSection() {
               rel="noopener noreferrer"
               className="text-primary hover:underline gap-1 flex items-center flex-row"
             >
-              EURO LAB Элементийн шинжилгээ - Празеодиум
+              EURO LAB Элементийн шинжилгээ
               <ExternalLink className="w-3 h-3" />
             </a>
             <a
