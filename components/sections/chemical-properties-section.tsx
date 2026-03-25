@@ -30,7 +30,7 @@ const properties = [
   },
   {
     icon: Droplets,
-    title: "Идэвх (Reactivity)",
+    title: "Урвалын идэвх (Reactivity)",
     value: "Дунд зэрэг",
     description:
       "Өрөөний температурт хүчилтөрөгчтэй удаан урвалд орно, халуунд хурдан урвалд ордог. Pr₂O₃ исэл үүсгэдэг.",
@@ -38,7 +38,7 @@ const properties = [
   {
     icon: Magnet,
     title: "Соронзон шинж чанар (Magnetic Properties)",
-    value: "Парамагнетик",
+    value: "Парасоронзон",
     description:
       "Тэгш бус 4f электроноос үүдэлтэй парамагнетик шинж үзүүлдэг. Соронзонд ашиглагддаг.",
   },
@@ -207,8 +207,8 @@ export function ChemicalPropertiesSection() {
             <span className="text-accent">Шинж</span> чанарууд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            Празеодимын химийн шинж чанар, электроны зохион байгуулалт,
-            үйлдлийн төлөв болон онцгой шинж чанаруудыг судалж ойлгох уу ?
+            Празеодимын химийн шинж чанар, электрон байгуулалт,
+            исэлдэхүүн хэм болон онцгой шинж чанаруудыг судалж ойлгох уу?
           </p>
         </motion.div>
         {/* Properties Grid */}
