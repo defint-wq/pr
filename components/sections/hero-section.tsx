@@ -23,7 +23,7 @@ const facts = [
   { label: "Атомын дугаар", value: "59" },
   { label: "Атом масс", value: "140.91 u" },
   { label: "Үе", value: "6" },
-  { label: "Бүлэг", value: "Лантаноид" },
+  { label: "Бүлэг", value: "Лантанойд" },
 ];
 
 export function HeroSection() {
