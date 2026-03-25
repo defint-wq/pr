@@ -48,9 +48,9 @@ function ElementTile() {
           <div className="w-full h-full flex flex-col items-center justify-center text-white select-none">
             <span className="absolute top-2 left-3 text-lg font-bold">59</span>
             <span className="text-6xl font-bold tracking-tight">Pr</span>
-            <span className="text-sm mt-1">Praseodymium</span>
+            <span className="text-sm mt-1">Прaзeодим</span>
             <span className="text-xs text-zinc-400 mt-0.5">140.91</span>
-            <span className="text-xs text-green-400 mt-0.5">Lanthanide</span>
+            <span className="text-xs text-green-400 mt-0.5">Лантанойд</span>
           </div>
         </Html>
       </group>

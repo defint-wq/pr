@@ -41,7 +41,7 @@ interface Compound {
 const compounds: Compound[] = [
   {
     id: "oxide",
-    name: "Празеодим Оксид",
+    name: "Празеодимын оксид",
     formula: "Pr₂O₃ / Pr₆O₁₁",
     description:
       "Празеодим нь хүчилтөрөгчтэй урвалд орж үүсдэг хар эсвэл хар ногоон нунтаг. Хамгийн түгээмэл хэлбэр нь Pr₆O₁₁ юм.",
@@ -62,7 +62,7 @@ const compounds: Compound[] = [
   },
   {
     id: "chloride",
-    name: "Празеодим Хлорид",
+    name: "Празеодимын хлорид",
     formula: "PrCl₃",
     description:
       "Усанд сайн уусдаг ногоон кристал бүтэцтэй нэгдэл. Празеодимын химийн процессын чухал зуучлагч бодис юм.",
@@ -83,7 +83,7 @@ const compounds: Compound[] = [
   },
   {
     id: "fluoride",
-    name: "Празеодим фторид",
+    name: "Празеодимын фторид",
     formula: "PrF₃",
     description:
       "Бусад празеодимын галогенидээс харьцангуй идэвх багатай ногоон хатуу бодис. Тусгай оптик хэрэглээнд ашиглагддаг.",
@@ -148,12 +148,11 @@ export function CompoundsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-primary">Хэрэгцээт</span> Нэгдлүүд
+            <span className="text-primary">Чухал</span> нэгдлүүд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
-            Празеодимын гол нэгдлүүдийг 3D молекулын бүтэцтэйгээр судлаарай.
-            Атомын зохион байгуулалтыг шалгахын тулд эргүүлж, томруулж болно
-            шүү.
+            Празеодимын чухал нэгдлүүдийг 3D молекулын бүтэцтэйгээр судлаарай.
+            Атомын зохион байгуулалтыг шалгахын тулд эргүүлж, томруулж болно.
           </p>
         </motion.div>
 

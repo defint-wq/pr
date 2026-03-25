@@ -23,10 +23,10 @@ const OrbitalVisualization = dynamic(
 const properties = [
   {
     icon: Zap,
-    title: "Исэлдэлтийн зэрэг (Oxidation States)",
+    title: "Исэлдэхүүн хэм (Oxidation States)",
     value: "+3, +4",
     description:
-      "+3 төлөв нь хамгийн тогтвортой, зарим нэгдлүүдэд +4 үүсгэж болно. +3 төлөв нь ховор шороон металл (lanthanide) элементүүдийн онцлог шинж юм.",
+      "+3 төлөв нь хамгийн тогтвортой, зарим нэгдлүүдэд +4 үүсгэж болно. +3 төлөв нь газрын ховор элементүүдийн онцлог шинж юм.",
   },
   {
     icon: Droplets,
@@ -44,10 +44,10 @@ const properties = [
   },
   {
     icon: Thermometer,
-    title: "Хайлах температур",
+    title: "Хайлах температур (Melting Point)",
     value: "931°C",
     description:
-      "Ховор шороон металл дундаас харьцангуй бага хайлах температуртай. Буцлах цэг нь 3,520°C.",
+      "Газрын ховор элементүүд дундаас харьцангуй бага хайлах температуртай. Буцлах цэг нь 3,520°C.",
   },
 ];
 const electronConfig = [
@@ -204,7 +204,7 @@ export function ChemicalPropertiesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-accent">Шинж</span> Чанарууд
+            <span className="text-accent">Шинж</span> чанарууд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
             Празеодимын химийн шинж чанар, электроны зохион байгуулалт,
@@ -367,7 +367,7 @@ export function ChemicalPropertiesSection() {
                 <div>
                   <div className="text-muted-foreground">Бүлэг</div>
                   <div className="text-lg md:text-xl font-bold text-primary">
-                    Лантанид
+                    Лантанойд
                   </div>
                 </div>
                 <div>
@@ -396,13 +396,13 @@ export function ChemicalPropertiesSection() {
                   <span className="font-mono text-foreground">6.77 гр/cм³</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Кристал бүтэц</span>
+                  <span className="text-muted-foreground">Талст бүтэц</span>
                   <span className="font-mono text-foreground">
                     Гексагональ, Кубик
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-muted-foreground">Харагдац</span>
+                  <span className="text-muted-foreground">Өнгө</span>
                   <span className="font-mono text-foreground">
                     Цагаан саарал гялгар 
                   </span>

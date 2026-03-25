@@ -119,11 +119,11 @@ export function ApplicationsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-accent">Бодит</span> Хэрэглээ
+            <span className="text-accent">Бодит</span> хэрэглээ
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
             Хүчирхэг соронзноос агаарын тээврийн хайлш хүртэл, Празеодим нь
-            орчин үеийн технологи ба үйлдвэрлэлд чухал үүрэг гүйцэтгэдэг юм шүү.
+            орчин үеийн технологи ба үйлдвэрлэлд чухал үүрэг гүйцэтгэдэг.
           </p>
         </motion.div>
 
@@ -238,7 +238,7 @@ export function ApplicationsSection() {
               <div className="p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border text-center">
                 <div className="text-3xl font-bold text-primary">$500M+</div>
                 <div className="text-sm text-muted-foreground">
-                  Празеодимиумийн жилийн зах зээл{" "}
+                  Празеодимын жилийн зах зээл{" "}
                 </div>
               </div>
               <div className="p-4 rounded-xl bg-card/50 backdrop-blur-sm border border-border text-center">

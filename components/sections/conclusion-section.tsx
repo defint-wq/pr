@@ -56,6 +56,12 @@ const futureTopics = [
   "Эрчим хүч хадгалах хэрэглээг сайжруулах",
 ];
 
+const Source = [
+  "EURO LAB Элементийн шинжилгээ - Празеодиум",
+  "Wikipedia Празодиум",
+  "Rare Earths The Element Praseodymium",
+];
+
 const periodicTableRow = [
   { symbol: "La", name: "Лантан", number: 57 },
   { symbol: "Ce", name: "Церий", number: 58 },
@@ -89,7 +95,7 @@ export function ConclusionSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-primary">Дүгнэлт</span> ба Ирээдүйд
+            <span className="text-primary">Дүгнэлт</span> ба ирээдүйд
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-pretty">
             Празеодим нь орчин үеийн технологийн суурь элемент бөгөөд ирэх хэдэн
@@ -150,14 +156,14 @@ export function ConclusionSection() {
               <div className="flex items-center gap-2 mb-3">
                 <Sparkles className="w-5 h-5 text-primary" />
                 <span className="font-semibold text-primary">
-                  Ерөнхий Дүгнэлт
+                  Ерөнхий дүгнэлт
                 </span>
               </div>
               <p className="text-foreground">
-                Ногоон өнгөтэй давсны нэгдлүүдээс эхлээд цахилгаан тээврийн
-                хэрэгслийг хөдөлгөгч хүчээр хангах үүрэг хүртэл, Празеодим нь
-                ховор газрын элементүүд хэрхэн тогтвортой технологи ба шинэ
-                бүтээлд суурь болохыг тодорхой харуулдаг байна.
+                Празеодим нь ховор шороон элементүүдийн нэг бөгөөд химийн
+                идэвхтэй, олон төрлийн нэгдэл үүсгэдэг. Орчин үеийн дэвшилтэт
+                технологийн материал, оптик болон соронзон төхөөрөмжүүдэд чухал
+                үүрэг гүйцэтгэдэг элемент юм.
               </p>
             </motion.div>
           </motion.div>
@@ -171,7 +177,7 @@ export function ConclusionSection() {
           className="mb-16"
         >
           <h3 className="text-xl font-semibold text-center mb-6 text-foreground">
-            Празеодим Лантанидын цувралд
+            Празеодим Лантанойдын цувралд
           </h3>
           <div className="flex justify-center gap-2 overflow-x-auto py-4">
             {periodicTableRow.map((element, index) => (
@@ -251,6 +257,41 @@ export function ConclusionSection() {
           </div>
         </motion.div>
 
+        <div className="p-8 rounded-xl bg-card/50 backdrop-blur-sm border border-border mb-16">
+          <h3 className="text-2xl font-bold text-center mb-10 text-foreground">
+            Эх сурвалжууд
+          </h3>
+          <div className="text-sm text-muted-foreground grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10">
+            <a
+              href="https://www.eurolab.net/mn/testler/element-analizleri/element-analizleri-praseodimyum-(pr)/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline gap-1 flex items-center flex-row"
+            >
+              EURO LAB Элементийн шинжилгээ - Празеодиум
+              <ExternalLink className="w-3 h-3" />
+            </a>
+            <a
+              href="https://en.wikipedia.org/wiki/Praseodymium"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline gap-1 flex items-center flex-row"
+            >
+              Wikipedia Празодиум
+              <ExternalLink className="w-3 h-3" />
+            </a>
+            <a
+              href="https://rareearths.com/praseodymium/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline gap-1 flex items-center flex-row"
+            >
+              Rare Earths The Element Praseodymium
+              <ExternalLink className="w-3 h-3" />
+            </a>
+          </div>
+        </div>
+
         {/* Footer */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -268,7 +309,7 @@ export function ConclusionSection() {
             Дээш буцах
           </Button>
 
-          <div className="pt-8 border-t border-border">
+          <div className="pt-8 border-t border-border mb-16">
             <p className="text-muted-foreground mb-4">
               Бидний танилцуулгыг сонирхсонд баярлалаа.
             </p>
@@ -293,18 +334,10 @@ export function ConclusionSection() {
           </div>
 
           <div className="text-muted-foreground grid grid-cols-4">
-            <div>
-              Монгол Улсын Их Сургууль
-            </div>
-            <div>
-              Шинжлэх Ухааны Сургууль
-            </div>
-            <div>
-              Байгалийн Ухааны Салбар
-            </div>
-            <div>
-              Химийн тэнхим
-            </div>
+            <div>Монгол Улсын Их Сургууль</div>
+            <div>Шинжлэх Ухааны Сургууль</div>
+            <div>Байгалийн Ухааны Салбар</div>
+            <div>Химийн тэнхим</div>
           </div>
         </motion.div>
       </div>
